@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="snakeV7.css">
+    <title>Snake perso</title>
+</head>
+
+<body>
+    <div id="bgd-bx">
+        <img src="assets/snake.png" alt="">
+    </div>
+
+    <ul>
+        <!-- Instructions -->
+        <li id="instructions">
+            <div class="apples">
+                <div class="apple">
+                    <p>Royal Gala<span>1</span></p>
+                    <div class="apple-box">
+                        <img src="assets/gala.png" alt="royal gala">
+                    </div>
+                </div>
+                <div class="apple">
+                    <p>Golden<span>2</span></p>
+                    <div class="apple-box">
+                        <img src="assets/golden.png" alt="golden">
+                    </div>
+                </div>
+                <div class="apple">
+                    <p>Granny Smith<span>5</span></p>
+                    <div class="apple-box">
+                        <img src="assets/granny.png" alt="granny smith">
+                    </div>
+                </div>
+                <div class="apple">
+                    <p>Pink Lady<span>10</span></p>
+                    <div class="apple-box">
+                        <img src="assets/pinklady.png" alt="pink lady">
+                    </div>
+                </div>
+                <div class="apple">
+                    <p>Pomme pourrie<span>-5</span></p>
+                    <div class="apple-box">
+                        <img src="assets/rotten.png" alt="pomme pourrie">
+                    </div>
+                </div>
+                <div class="apple">
+                    <p>Ciseaux<span>Rétrécir</span></p>
+                    <div class="apple-box">
+                        <img src="assets/ciseau.png" alt="ciseaux">
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <div><span>&larr; &uarr; &rarr; &darr;</span><span>Tourner</span></div>
+                <div><span>Ctrl</span><span>Klaxonner</span></div>
+                <div><span>Spacebar</span><span>Pause</span></div>
+            </div>
+        </li>
+        <!-- Canvas -->
+
+        <li id="game">
+
+            <button id="startbutton">Start game!</button></li>
+
+        <!-- Leaderboard -->
+        <li id="leaderboard">
+            <table aria-label=" ">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Joueur</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody id="tableToFill">
+
+
+                </tbody>
+
+
+            </table>
+
+
+        </li>
+    </ul>
+    <div id="copyright">
+        <p>Copyright © Rémi Prince 2021. Tous droits réservés.</p>
+    </div>
+
+    <script src="howler.min.js"></script>
+    <script type="text/javascript" src="snakeV7.js"></script>
+
+
+
+
+</body>
+
+</html>

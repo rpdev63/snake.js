@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 50px;
+}
+
+#bgd-bx {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+ul {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    list-style-type: none;
+    position: relative;
+}
+
+#instructions {
+    width: 300px;
+    border: 4mm ridge darkgreen;
+    background-color: beige;
+}
+
+#instructions .apples {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#instructions .apples .apple .apple-box {
+    margin-left: 10px;
+    height: 80px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#instructions .apples .apple .apple-box img {
+    width: 100%;
+    height: 100%;
+}
+
+#instructions .apples .apple p {
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#instructions .apples .apple p span {
+    margin-left: 12px;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #6DBD44;
+}
+
+#instructions .apples .apple:nth-child(5) p span {
+    color: red;
+}
+
+#instructions .controls {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#instructions .controls div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 8px 30px;
+    font-size: 1em;
+}
+
+#instructions .controls div span:first-child {
+    font-weight: bolder;
+}
+
+#instructions .controls div span:nth-child(2) {
+    font-style: italic;
+}
+
+#game {
+    min-height: 420px;
+    min-width: 630px;
+    display: flex;
+    justify-content: center;
+}
+
+#leaderboard {
+    width: 300px;
+}
+
+canvas {
+    border: 15px solid;
+    border-color: rgb(17, 3, 94);
+    background-color: beige;
+}
+
+#startbutton {
+    position: relative;
+    height: 50px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    padding: 5px 15px;
+    color: darkgreen;
+    font-size: 1.2em;
+    border: 5px solid darkgreen;
+    background: #adc67a;
+    cursor: pointer;
+}
+
+#startbutton:hover {
+    color: #d4e68f;
+}
+
+
+/*----------Table -------------------*/
+
+table {
+    height: 416px;
+    max-width: 100%;
+    border: 4mm ridge darkgreen;
+    background: #adc67a;
+    padding: 0 8px;
+}
+
+thead {
+    height: 30px;
+}
+
+thead tr th {
+    border-bottom: 3px solid darkgreen;
+    text-align: center;
+}
+
+thead th:nth-child(1) {
+    width: 10%;
+}
+
+thead th:nth-child(1) {
+    width: 70%;
+}
+
+thead th:nth-child(3) {
+    width: 20%;
+}
+
+tbody {
+    height: 400px;
+}
+
+tbody tr {
+    height: 40px;
+}
+
+tbody tr td {
+    text-align: right;
+    font-weight: 500;
+    color: green;
+}
+
+tbody tr td:nth-child(2) {
+    max-width: 240px;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+#copyright {
+    margin-top: 25px;
+    position: relative;
+    bottom: 0;
+    padding: 10px 40px;
+    text-align: center;
+    font-style: italic;
+    font-weight: 500;
+}
+
+@media all and (max-width:1300px) {
+    body {
+        margin: 0 0;
+    }
+    #instructions {
+        display: none;
+    }
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    ul li {
+        margin: 50px;
+    }
+}

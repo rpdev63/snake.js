@@ -1,0 +1,35 @@
+{
+  "resources": [
+    "effects.ogg",
+    "effects.m4a",
+    "effects.mp3",
+    "effects.ac3"
+  ],
+  "spritemap": {
+    "burp2": {
+      "start": 0,
+      "end": 0.9121768707482993,
+      "loop": false
+    },
+    "burp": {
+      "start": 2,
+      "end": 2.230340136054422,
+      "loop": false
+    },
+    "camion": {
+      "start": 4,
+      "end": 5.605646258503401,
+      "loop": false
+    },
+    "gameover": {
+      "start": 7,
+      "end": 9.209523809523809,
+      "loop": false
+    },
+    "skid": {
+      "start": 11,
+      "end": 12.250113378684807,
+      "loop": false
+    }
+  }
+}
